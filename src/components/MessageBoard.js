@@ -17,7 +17,7 @@ function MessageBoard() {
               <h4>{new Date(timestamp).toLocaleString()}</h4>
               <p>{text}</p>
               <h4>- {username}</h4>
-              <CreateReaction />
+              <CreateReaction messageId={id}/>
             </div>
           )
         })

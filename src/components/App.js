@@ -21,7 +21,7 @@ function App() {
       }
     })
   }, [])
-
+console.log('state', state)
   return (
     <Context.Provider value={{ state, dispatch, pubsub}}>
       <h2>Reaction</h2>
